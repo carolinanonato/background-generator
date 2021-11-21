@@ -2,13 +2,16 @@
 // If no argument is passed, 256 is set, ie, returns a number between and including 0 to 255
 // 		For example: 
 //    getRandomColorChannel(5) will return either 0, 1, 2, 3, 4
-const getRandomColorChannel = function(options=256) {
+
+
+
+function setNewColour() {
+  const getRandomColorChannel = function(options=256) {
   return Math.floor( Math.random() * options )
 }
 
 // Here's a test number, check the console to see the result
-console.log( getRandomColorChannel() )
-
+//console.log( getRandomColorChannel() )
 
 
 // COMPLETE THE FOLLOWING STEPS
@@ -32,5 +35,6 @@ document.body.style.backgroundColor=color;
 
 document.querySelector("h2").innerText = color;
 
-
-// 4) Wrap the entire procedure in a function named `setNewColour()`, call it multiple times from the `console` to test
+}
+// 4) Wrap the entire procedure in a function named `setNewColour()`, call it multiple times from the `console` to test}
+setNewColour()
