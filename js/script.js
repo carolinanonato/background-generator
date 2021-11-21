@@ -21,10 +21,16 @@ let b = getRandomColorChannel();
 
 color = `rgb(${r}, ${g}, ${b})`
 
-document.body.style.backgroundColor=color;
+
 
 // 2) Update user interface (the `document`), setting the new colour string to the body's background-color property
 
+document.body.style.backgroundColor=color;
+
 // 3) Use the three individual RGB numbers to update the HTML element "rgb(###, ####, ###)" (replacing ###s with the values)
+
+
+document.querySelector("h2").innerText = color;
+
 
 // 4) Wrap the entire procedure in a function named `setNewColour()`, call it multiple times from the `console` to test
