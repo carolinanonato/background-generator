@@ -2,9 +2,8 @@
 // If no argument is passed, 256 is set, ie, returns a number between and including 0 to 255
 // 		For example: 
 //    getRandomColorChannel(5) will return either 0, 1, 2, 3, 4
-
-
-
+document.getElementById("title").addEventListener("click", setNewColour);
+  
 function setNewColour() {
   const getRandomColorChannel = function(options=256) {
   return Math.floor( Math.random() * options )
@@ -38,3 +37,5 @@ document.querySelector("h2").innerText = color;
 }
 // 4) Wrap the entire procedure in a function named `setNewColour()`, call it multiple times from the `console` to test}
 setNewColour()
+
+
